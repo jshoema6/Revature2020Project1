@@ -1,0 +1,25 @@
+<apex:page controller="StudentMasterController">
+ 
+    <apex:form >
+    <apex:pageMessages />
+        <apex:pageBlock title="Student Entry">
+
+            <apex:pageBlockSection >
+                 <apex:inputField value="{!student.name}"/> <br/>
+                 <apex:inputField value="{!student.Confirmed__c}"/> <br/>
+                 <apex:inputField value="{!student.Age__c}"/> <br/>
+                 <apex:inputField value="{!Student.Countries__c}"/> <br/>
+                 <apex:inputField value="{!Student.Studentemail__c}"/> <br/>
+                 <apex:inputField value="{!Student.University__c}"/> <br/>
+             </apex:pageBlockSection>
+    
+       <apex:pageblockButtons location="bottom">
+            <apex:pageblockSection >
+                    <apex:commandButton action="{!save}" value="Save" title="Save" />
+                    <apex:commandButton action="{!cancel}" value="Cancel" title="Cancel" />
+                
+            </apex:pageblockSection>
+        </apex:pageblockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

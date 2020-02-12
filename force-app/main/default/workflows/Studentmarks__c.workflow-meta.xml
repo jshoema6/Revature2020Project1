@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>UpdateUniqueField</fullName>
+        <field>UniqueIDCombo__c</field>
+        <formula>Studentmaster__c + &#39; &#39; + trim(TEXT(Subjects__c)) + &#39; &#39; + trim(TEXT(Year__c))</formula>
+        <name>UpdateUniqueField</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>UpdateUniqueID</fullName>
+        <actions>
+            <name>UpdateUniqueField</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Studentmarks__c.Marks__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>0</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+</Workflow>

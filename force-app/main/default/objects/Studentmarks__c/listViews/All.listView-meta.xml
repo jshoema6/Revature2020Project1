@@ -5,6 +5,7 @@
     <columns>Marks__c</columns>
     <columns>Studentmaster__c</columns>
     <columns>Subjects__c</columns>
+    <columns>UniqueIDCombo__c</columns>
     <filterScope>Everything</filterScope>
     <label>All</label>
 </ListView>

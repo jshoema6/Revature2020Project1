@@ -10,6 +10,7 @@
     <columns>Weight__c</columns>
     <columns>Fragile__c</columns>
     <columns>Route__c</columns>
+    <columns>Has_Insurance__c</columns>
     <filterScope>Everything</filterScope>
     <label>All</label>
 </ListView>

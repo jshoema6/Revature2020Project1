@@ -4,7 +4,7 @@
     <externalId>false</externalId>
     <label>Delivery Status</label>
     <required>false</required>
-    <trackHistory>false</trackHistory>
+    <trackHistory>true</trackHistory>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
     <valueSet>
@@ -30,6 +30,11 @@
                 <fullName>Delivered</fullName>
                 <default>false</default>
                 <label>Delivered</label>
+            </value>
+            <value>
+                <fullName>Missing</fullName>
+                <default>false</default>
+                <label>Missing</label>
             </value>
         </valueSetDefinition>
     </valueSet>

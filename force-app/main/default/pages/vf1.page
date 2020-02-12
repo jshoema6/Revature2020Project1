@@ -1,0 +1,7 @@
+<apex:page standardController="Studentmaster__c">
+<apex:slds />
+Hello {!$User.FirstName} your profile is {!$Profile.Name}
+
+    <apex:detail inlineEdit="true" relatedlist="false"/>
+    <apex:relatedlist list="Studentmarks__r"/>
+</apex:page>

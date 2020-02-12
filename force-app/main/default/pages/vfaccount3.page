@@ -1,0 +1,35 @@
+<apex:page controller="AccountController" action="{!showlist}">
+    <apex:form >
+        <apex:pageMessages />
+        <apex:pageBlock title="Account Entry Form">
+            <apex:inputField value="{!acc.Name}"/> <br/>
+            <apex:inputField value="{!acc.annualrevenue}"/> <br/>
+            <apex:inputField value="{!acc.Rating}"/> <br/>
+            <apex:inputCheckbox value="{!cb}"/>
+            
+        </apex:pageBlock>
+        
+        
+        
+        <apex:pageBlock >
+            <apex:pageblockButtons location="bottom">
+                <apex:commandButton action="{!save}" value="Save" title="Save" />
+                <apex:commandButton action="{!cancel}" value="Cancel" title="Cancel" />
+                
+            </apex:pageblockButtons>
+        </apex:pageBlock>
+        
+        <apex:pageBlock title="Accounts Created Today" rendered="{!cb}">
+            <apex:pageBlockSection collapsible="true">
+                <apex:pageBlockTable value="{!acclist}" var="ac">
+                    <apex:column ><apex:outputField value="{!ac.name}"/></apex:column>
+                    <apex:column ><apex:outputField value="{!ac.annualrevenue}"/></apex:column>
+                    <apex:column ><apex:outputField value="{!ac.rating}"/></apex:column>
+
+                </apex:pageBlockTable>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+                
+    </apex:form>
+    
+</apex:page>
