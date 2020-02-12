@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Studentmaster</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Studentmasters</value>
+    </caseValues>
+    <layouts>
+        <layout>Studentmaster Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Age cant be less than 19 --></errorMessage>
+        <name>CheckAgeandConfirmed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Confirmed cannot be true. --></errorMessage>
+        <name>CheckConfirmed</name>
+    </validationRules>
+    <workflowTasks>
+        <name>CreateID_and_Accomodations</name>
+        <subject><!-- CreateID and Accomodations --></subject>
+    </workflowTasks>
+</CustomObjectTranslation>

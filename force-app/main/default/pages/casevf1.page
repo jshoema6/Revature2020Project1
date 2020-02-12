@@ -1,0 +1,21 @@
+<apex:page controller="caselist">
+    <apex:form >
+        <apex:image value="{!URLFOR($Resource.image1)}"/>
+        <apex:includeScript value="{!URLFOR($Resource.js1)}" />
+
+        <apex:pageblock >
+            <apex:pageBlockTable value="{!cslist}" var="c">
+                <apex:column value="{!c.casenumber}"/>
+                
+            </apex:pageBlockTable>
+            <apex:pageblockbuttons >
+                <apex:commandButton action="{!previous}" value="previous"/>
+       			<apex:commandButton action="{!next}" value="next"/>
+                <apex:commandButton onclick="x()" value="Java BUTTON"/>
+
+
+
+            </apex:pageblockbuttons>
+        </apex:pageblock>
+    </apex:form>
+</apex:page>
