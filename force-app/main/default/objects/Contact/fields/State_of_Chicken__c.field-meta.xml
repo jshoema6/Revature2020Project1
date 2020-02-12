@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>State_of_Chicken__c</fullName>
+    <externalId>false</externalId>
+    <label>State of Chicken</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Types_of_Chickens__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cooked</fullName>
+                <default>false</default>
+                <label>Cooked</label>
+            </value>
+            <value>
+                <fullName>Uncooked</fullName>
+                <default>false</default>
+                <label>Uncooked</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Brown</controllingFieldValue>
+            <controllingFieldValue>Black</controllingFieldValue>
+            <valueName>Uncooked</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yellow</controllingFieldValue>
+            <controllingFieldValue>Golden</controllingFieldValue>
+            <valueName>Cooked</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

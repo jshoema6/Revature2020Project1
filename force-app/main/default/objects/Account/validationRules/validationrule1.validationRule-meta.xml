@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>validationrule1</fullName>
+    <active>false</active>
+    <description>agile case 2 - description</description>
+    <errorConditionFormula>AND(AnnualRevenue &lt; 1000, ISNEW(),  $Profile.Name = &#39;System Administrator&#39;,  $CustomMetadata.switchonoff__mdt.trueorfalse.switch__c)</errorConditionFormula>
+    <errorDisplayField>AnnualRevenue</errorDisplayField>
+    <errorMessage>Accounts in system cannot be less than 999, if record is new</errorMessage>
+</ValidationRule>
